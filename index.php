@@ -1,6 +1,6 @@
 <?php
 require_once 'init.php';
-session_start();
+
 $formData = array();
 if (!empty($_GET)) {
     $formData = filter_var_array($_GET, $inputFilter);

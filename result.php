@@ -2,7 +2,6 @@
 
 require_once 'init.php';
 
-session_start();
 
 $data = json_decode($_SESSION['last_amp_data_result'], TRUE);
 

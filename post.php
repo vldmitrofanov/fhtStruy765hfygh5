@@ -4,7 +4,6 @@ require_once 'init.php';
 
 use Carbon\Carbon;
 
-session_start();
 
 $timestamp = time();
 
