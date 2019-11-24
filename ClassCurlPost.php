@@ -41,7 +41,9 @@ class CurlPost
         curl_setopt($ch, CURLOPT_VERBOSE, TRUE);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
-        curl_setopt($ch, CURLOPT_STDERR, $verbose);
+        if (_DEBUG_) {
+            curl_setopt($ch, CURLOPT_STDERR, $verbose);
+        }
         curl_setopt(
             $ch,
             CURLOPT_HTTPHEADER,
