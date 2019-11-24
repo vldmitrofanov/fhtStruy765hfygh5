@@ -41,27 +41,6 @@ try {
     die(sprintf('Http error %s with code %d', $ex->getMessage(), $ex->getCode()));
 }
 
-$data = json_decode($result, TRUE);
-include('header.php');
-?>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12" style="margin-top: 150px;">
-            <?php
-            if (isset($data['response'])) {
-                ?>
-                <div class="alert alert-success">
-                    <strong>Success!</strong> The lead has been created. Transaction ID: <?php echo $data['transaction_id']; ?> App ID: <?php echo $data['app_id']; ?>
-                </div>
+$_SESSION['last_amp_data_result'] = $result;
 
-            <?php
-            }
-            ?>
-
-        </div>
-    </div>
-</div>
-
-<?php
-include('footer.php');
-?>
+header('Location: result.php');

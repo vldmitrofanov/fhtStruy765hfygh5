@@ -9,3 +9,8 @@ require_once 'config.php';
 require_once 'filter.php';
 require_once 'functions.php';
 require_once 'ClassCurlPost.php';
+
+
+if (!isset($_GET['app_secret']) || $_GET['app_secret'] != md5($appConfig['api_key_id'])) {
+    die('ERROR: you are not autorized!');
+}
