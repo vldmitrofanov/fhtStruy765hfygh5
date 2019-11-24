@@ -1,0 +1,16 @@
+{
+    "name": "vldmitrofanov/fhtStruy765hfygh5",
+    "description": "API to use Ignidus",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Vladimir Mitrofanov",
+            "email": "shirker2006@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "nesbot/carbon": "^1.39.1"
+    }
+}
