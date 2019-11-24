@@ -12,5 +12,5 @@ require_once 'ClassCurlPost.php';
 
 
 if (!isset($_GET['app_secret']) || $_GET['app_secret'] != md5($appConfig['api_key_id'])) {
-    die('ERROR: you are not autorized!');
+    die('ERROR: you are not authorized to access');
 }
