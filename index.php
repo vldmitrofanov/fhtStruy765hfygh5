@@ -159,7 +159,7 @@ include('header.php');
                 </div>
 
                 <div class="form-group">
-                <label for="total_payroll">estimated annual payroll</label>
+                <label for="total_payroll">Estimated annual payroll</label>
                 <select name="total_payroll" if="total_payroll" class="form-control">
                     <option value="Under 15k"<?php if($formData['total_payroll']=='Under 15k') echo ' selected'; ?>>Under 15k</option>
                     <option value="15k-30k"<?php if($formData['total_payroll']=='15k-30k') echo ' selected'; ?>>15k-30k</option>
