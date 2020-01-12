@@ -43,6 +43,7 @@ $inputFilter = array(
     'claims_made' => FILTER_SANITIZE_NUMBER_INT,
     'effective_date' => FILTER_SANITIZE_STRING,
     'lead_campaign_name' => FILTER_SANITIZE_STRING,
+    'total_payroll' => FILTER_SANITIZE_STRING,
 );
 
 $inputFilterClassCodes = array(

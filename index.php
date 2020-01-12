@@ -158,6 +158,17 @@ include('header.php');
                     <!-- / -->
                 </div>
 
+                <select name="total_payroll" class="form-control">
+                    <option value="Under 15k"<?php if($formData['total_payroll']=='Under 15k') echo ' selected'; ?>>Under 15k</option>
+                    <option value="15k-30k"<?php if($formData['total_payroll']=='15k-30k') echo ' selected'; ?>>15k-30k</option>
+                    <option value="30k-50k"<?php if($formData['total_payroll']=='30k-50k') echo ' selected'; ?>>30k-50k</option>
+                    <option value="50k-70k"<?php if($formData['total_payroll']=='50k-70k') echo ' selected'; ?>>50k-70k</option>
+                    <option value="70k-90k"<?php if($formData['total_payroll']=='70k-90k') echo ' selected'; ?>>70k-90k</option>
+                    <option value="90k-110k"<?php if($formData['total_payroll']=='90k-110k') echo ' selected'; ?>>90k-110k</option>
+                    <option value="110k-150k"<?php if($formData['total_payroll']=='110k-150k') echo ' selected'; ?>>110k-150k</option>
+                    <option value="Over 150k"<?php if($formData['total_payroll']=='Over 150k') echo ' selected'; ?>>Over 150k</option>
+                </select>
+
                 <?php
                 /* need a checkbox?
                 <div class="checkbox">
